@@ -16,7 +16,7 @@ $this->stmt = $this->Conect()->prepare("SELECT * FROM useradmin");
 
 public function readOrient(){ 
 $this->stmt = $this->Conect()->prepare("SELECT * FROM usuarios");    $this->stmt->execute(); 
-        $result = $this->stmt->fetchAll(PDO::FETCH_OBJ);
+$result = $this->stmt->fetchAll(PDO::FETCH_OBJ);
         return $result;  
     }
 
@@ -31,17 +31,16 @@ $this->stmt = $this->Conect()->prepare("SELECT * FROM usuarios");    $this->stmt
     }
 
 //se o usuário e senha coicidir cria sessão e direciona para página privada
-    public static function autorizado($controle=null){
-        if(isset($controle)){
-            session_start();
-            $_SESSION['login'] = session_id();
-            header("location:formCadAlunos.php"); 
-        }else if($controle == null){
-            session_start();
-            $_SESSION['login'] = session_id();
-            header("location:formUser.php");  
-        }
-        
-    } // fim autorizado
+public static function autorizado($controle=null){
+    if(isset($controle)){
+        session_start();
+        $_SESSION['loginOrient'] = session_id();
+        header("location:formCadAlunos.php"); 
+    }else if($controle == null){
+        session_start();
+        $_SESSION['login'] = session_id();
+        header("location:formUser.php");  
+    }
+  } // fim autorizado
 }
 ?>

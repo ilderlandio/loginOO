@@ -15,7 +15,7 @@ foreach($dados as $usuario => $valores){
         Sessao::autorizado($controle); 
         break;
     }else{
-        $loginNot = true; // se a autenticação falhar, não achar usuários e senhas 
+        $loginNot = true; 
+    // se a autenticação falhar, não achar usuários e senhas 
     }   
 }
-

@@ -1,3 +1,11 @@
+<?php 
+include_once("classes/Sessao.php"); 
+if(isset($_GET['logoff'])){
+  Sessao::logoff(); 
+}
+   session_start();
+   if(isset($_SESSION['loginOrient'])){
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -153,6 +161,13 @@
 	
 </div>
 </div>
-
+ <a href="?logoff">Sair</a> 
 </body>
 </html>
+<?php 
+  } // fecha o bloco do if 
+  else{
+ echo "Você não é Orientador! <br>";
+ echo "<a href='loginOrient.php'> Tente Novamente! </a>";
+  }
+?>

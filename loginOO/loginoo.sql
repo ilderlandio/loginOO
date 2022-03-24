@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 23-Mar-2022 às 16:15
+-- Tempo de geração: 16-Mar-2022 às 16:10
 -- Versão do servidor: 5.7.31
 -- versão do PHP: 7.3.21
 
@@ -55,16 +55,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `senha` varchar(255) NOT NULL,
   `email` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
---
--- Extraindo dados da tabela `usuarios`
---
-
-INSERT INTO `usuarios` (`id`, `usuario`, `senha`, `email`) VALUES
-(2, '$2y$10$GjhJut.RDfb0mj6.qmvDO.bV24NbM8mKW9pbUD4MlU1OCY8Rx64ZG', '$2y$10$xMwbYXyWmJloDQA8rv6Chu1rHewOGEGhoRidX/XPzgcyx7r3OTvEy', 'joao@gmail.com'),
-(3, '$2y$10$2WV0pN9l48JSLRZCh84u3u0K.uMhRPSInhW3JfPHzQBcCEyD4BDv6', '$2y$10$CDP0Eju4H7RCvvpG1CWs7eV9AB0mejnWKWXsMDxJmNqgHWMoBUh0O', 'aline@gmail.com'),
-(4, '$2y$10$aNzhmM9bjf6N2rSrrmIG5e25khNFZwC1lUcmlf9rpxRYjURPw0ynS', '$2y$10$gn30gXeNu4vf2r6MqEBz9eTZdNyN.O.RPwpiapdSue5YrIko6fDFC', 'marcao@gmail.com');
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

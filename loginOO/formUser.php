@@ -28,7 +28,8 @@ if(isset($_GET['logoff'])){
     <p> <button type="submit"> Cadastrar </button> </p>
   </form>  
 
-<a href="?logoff">Sair</a> <!-- aqui no href estou passando um valor via get para a prória página -->
+<a href="?logoff">Sair</a> 
+<!-- aqui no href estou passando um valor via get para a prória página -->
 
 </body>
 </html>
