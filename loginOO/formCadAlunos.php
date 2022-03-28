@@ -139,11 +139,7 @@ if(isset($_GET['logoff'])){
 	<div class="container">
 		<div class="card" style="position:relative;">
 			<h1>Cadastrar Alunos</h1>
-
-
 			<hr>
-
-		
 		<div class="label-float">
 
 		<p> <input type="text" name="nome"> Nome</p>
@@ -153,7 +149,11 @@ if(isset($_GET['logoff'])){
 		<p><input type="text" name="instituto"> Instituição</p>
 		<p><input type="text" name="curso"> Curso</p>
 		<p><input type="text" name="estagio"> Área de Estágio</p>
-
+		<p><select name="situacao">
+			<option value="ocioso"> Ocioso(a) </option>
+			<option value="trabalho"> Trabalhando </option>
+			<option value="faculdade"> Faculdade </option>
+		</select></p>
 		<br>
 
 		<div class="justify-center">
