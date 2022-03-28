@@ -12,6 +12,9 @@ if(isset($_GET['logoff'])){
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Cadastrar Alunos</title>
+
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
 	<style type="text/css">
 
 		body{
@@ -134,7 +137,7 @@ if(isset($_GET['logoff'])){
 </head>
 <body>
 	<div class="container">
-		<div class="card">
+		<div class="card" style="position:relative;">
 			<h1>Cadastrar Alunos</h1>
 
 
@@ -158,10 +161,11 @@ if(isset($_GET['logoff'])){
 		</div>
 
 		</div>
-	
+	<a href="?logoff" style="position: absolute;right:10px;"> <i class="fa fa-sign-out" style="color:white;font-size: 20px;" aria-hidden="true"></i> 
+ </a> 
 </div>
 </div>
- <a href="?logoff">Sair</a> 
+ 
 </body>
 </html>
 <?php 
